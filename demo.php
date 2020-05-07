@@ -27,7 +27,6 @@
     for (let i = 0; i < 10; i++) {
         myHTML += `<div id='thumbnails${i+1}' data-id="${i+1}" class="thumbnails col-12 col-sm-6 col-md-6 col-lg-4 my-3 d-flex justify-content-center">
                       <picture class="photo round-small">
-                            <source media="(max-width: 575px)" srcset="/generator.php?size=mic&name=${i+1}">
                             <img src="/generator.php?size=min&name=${i+1}" alt=\'mountains\'>
                       </picture>
                     </div>`;
@@ -36,6 +35,7 @@
 </script>
 
 <script src="js/lightgallery.min.js"></script>
+<script src="js/mobilecheck.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
